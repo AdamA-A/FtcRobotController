@@ -15,10 +15,9 @@ public class ArmTester extends LinearOpMode {
         if (isStopRequested()) return;
 
         while (opModeIsActive()) {
-            // int position = motor.getCurrentPosition();
 
             // Show the position of the motor on telemetry
-            telemetry.addData("Encoder Position", position);
+            // telemetry.addData("Encoder Position", position);
             telemetry.update();
         }
     }
