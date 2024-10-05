@@ -22,6 +22,9 @@ public class Arm {
 
         rotationalMotor.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
         rotationalMotor.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+
+        extendMotor.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        extendMotor.setMode(DcMotor.RunMode.RUN_TO_POSITION);
     }
 
     public void rotateTo(double angle, boolean toNormalize) {
