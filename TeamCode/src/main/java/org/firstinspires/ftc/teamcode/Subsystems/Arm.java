@@ -23,10 +23,10 @@ public class Arm {
     }
 
     public static boolean rotateTo() {
-
+        return true;
     }
 
     private static boolean rotatePosition() {
-        //
+        return true;
     }
 }

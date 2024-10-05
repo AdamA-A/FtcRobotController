@@ -22,5 +22,6 @@ public class PIDControl extends LinearOpMode {
 
     public double PIDControl(double reference, double state) {
         double error = reference - state;
+        return error;
     }
 }
