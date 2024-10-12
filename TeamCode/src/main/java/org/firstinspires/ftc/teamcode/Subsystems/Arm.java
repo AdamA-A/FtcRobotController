@@ -9,7 +9,7 @@ public class Arm {
     // Counts per revolution
     final double CPR = 28;
     private static DcMotor rotationalMotor = null;
-    private static DcMotor extendMotor = null;
+    public static DcMotor extendMotor = null;
     private static Arm instance = null;
 
     public static Arm getInstance() {
@@ -17,14 +17,14 @@ public class Arm {
     }
 
     private Arm() {
-        rotationalMotor = hardwareMap.dcMotor.get("rotationalMotor");
+        //rotationalMotor = hardwareMap.dcMotor.get("rotationalMotor");
         extendMotor = hardwareMap.dcMotor.get("extendMotor");
 
-        rotationalMotor.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-        rotationalMotor.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        //rotationalMotor.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        //rotationalMotor.setMode(DcMotor.RunMode.RUN_TO_POSITION);
 
         extendMotor.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-        extendMotor.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        //extendMotor.setMode(DcMotor.RunMode.RUN_TO_POSITION);
     }
 
     public void rotateTo(double angle, boolean toNormalize) {
